@@ -18,6 +18,8 @@ PRODUCT_NAME := lineage_vili
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="vili_global-user 14 UKQ1.231207.002 V816.0.22.0.UKDMIXM release-keys" \
-    BuildFingerprint=Xiaomi/vili_global/vili:14/UKQ1.231207.002/V816.0.22.0.UKDMIXM:user/release-keys
+    BuildFingerprint=Xiaomi/vili_global/vili:14/UKQ1.231207.002/V816.0.22.0.UKDMIXM:user/release-keys \
+    DeviceProduct=vili \
+    SystemName=vili_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

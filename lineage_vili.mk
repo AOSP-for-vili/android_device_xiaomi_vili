@@ -9,6 +9,13 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Lunaris Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_CUSTOM_UDFPS := true
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
+WITH_GMS := true
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili

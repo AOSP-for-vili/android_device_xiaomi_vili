@@ -37,6 +37,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Include proprietary files
 include vendor/xiaomi/vili/BoardConfigVendor.mk

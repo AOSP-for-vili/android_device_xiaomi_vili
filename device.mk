@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 
 # MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+$(call soong_config_set,camera,override_format_from_reserved,true)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

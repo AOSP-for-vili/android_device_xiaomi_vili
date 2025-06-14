@@ -790,10 +790,10 @@ vendor/etc/thermal-map.conf
 vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
+vendor/etc/thermal-normal.conf|5fb2aac02136c295b26fa8111e8537ef6c2e317c
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
-vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-tgame.conf|91ad6ac75c786763898955de514b62406e8bec15
 vendor/etc/thermal-video.conf
 vendor/etc/thermald-devices.conf
 

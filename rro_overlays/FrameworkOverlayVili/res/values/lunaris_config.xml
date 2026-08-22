@@ -4,7 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Landscape, just use the regular values -->
-    <dimen name="status_bar_padding_start">0dp</dimen>
-    <dimen name="status_bar_padding_end">1dp</dimen>
+    <!-- CPU temperature -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
 </resources>

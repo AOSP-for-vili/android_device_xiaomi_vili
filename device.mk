@@ -11,8 +11,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
 # MIUI Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
-$(call soong_config_set_bool,camera,override_format_from_reserved,true)
+#$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+#$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Overlays
 PRODUCT_PACKAGES += \

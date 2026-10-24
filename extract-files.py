@@ -16,6 +16,12 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils.makefiles import (
+    MakefilesCtx,
+    ProductPackagesCtx,
+    write_mk_guard_begin,
+    write_mk_guard_end,
+)
 
 namespace_imports = [
     'hardware/qcom-caf/sm8350',
@@ -55,6 +61,15 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
+
+def android_mk_guard_begin(ctx: MakefilesCtx, _: ProductPackagesCtx):
+    write_mk_guard_begin('TARGET_DEVICE', 'vili', ctx.mk_out)
+
+
+def android_mk_guard_end(ctx: MakefilesCtx, _: ProductPackagesCtx):
+    write_mk_guard_end(ctx.mk_out)
+
+
 module = ExtractUtilsModule(
     'vili',
     'xiaomi',
@@ -62,6 +77,13 @@ module = ExtractUtilsModule(
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
     add_firmware_proprietary_file=False,
+    skip_main_proprietary_file=True,
+)
+
+module.add_proprietary_file(
+    'proprietary-files.txt',
+    pre_makefile_generation_fn=android_mk_guard_begin,
+    post_makefile_generation_fn=android_mk_guard_end,
 )
 
 if __name__ == '__main__':

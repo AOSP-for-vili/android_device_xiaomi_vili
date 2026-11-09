@@ -314,7 +314,8 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -27 V 84 H 27 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -27 V 110 H 27 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation" translatable="false">M 0,0 H -27 V 110 H 27 V 0 H 0 Z</string>
 
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher
